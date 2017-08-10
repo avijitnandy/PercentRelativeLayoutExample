@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--
+    TextView's for labels and EditText for getting value from user
+    -->
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_height="wrap_content"
+        android:text="UserName :"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="30%" />
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUserName"
+        android:text="Password :"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginTopPercent="4%"
+        app:layout_widthPercent="30%" />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtUserName"
+        android:hint="User Name"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginTopPercent="8%"
+        app:layout_widthPercent="50%" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginTopPercent="16%"
+        app:layout_widthPercent="50%" />
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/login"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_marginPercent="5%"
+        app:layout_widthPercent="60%" />
+</android.support.percent.PercentRelativeLayout>
